@@ -8,6 +8,14 @@ export default function Search() {
   const searchHandler = () => {
     navigate("/search?keyword=" + keyword);
   };
+
+  const handleKeyDown=(e)=>{
+    if(e.key==="Enter")
+    {
+      e.preventDefault();
+      searchHandler();
+    }
+  }
   return (
     <div className="input-group">
       <input
@@ -17,9 +25,14 @@ export default function Search() {
         className="form-control"
         placeholder="Enter Product Name ..."
         onBlur={searchHandler}
+            onKeyDown={handleKeyDown}
       />
       <div className="input-group-append">
-        <button id="search_btn" className="btn" onClick={searchHandler}>
+        <button
+          id="search_btn"
+          className="btn"
+          onClick={searchHandler}
+        >
           <i className="fa fa-search" aria-hidden="true"></i>
         </button>
       </div>
