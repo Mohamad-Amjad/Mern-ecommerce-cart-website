@@ -8,7 +8,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "react-script": "^2.0.5"
   },
   "dependencies": {
     "cors": "^2.8.5",
