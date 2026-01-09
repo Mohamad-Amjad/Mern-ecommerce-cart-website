@@ -7,16 +7,12 @@
   "type": "commonjs",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "build": "react-scripts build",
-    "react-script": "^2.0.5"
+    "start": "node app.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^17.2.2",
     "express": "^5.1.0",
-    "mongoose": "^8.18.1",
-    "nodemon": "^3.1.10",
-    "react-script": "^2.0.5"
-  }
+    "mongoose": "^8.18.1"
+    }
 }
