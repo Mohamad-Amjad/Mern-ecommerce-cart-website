@@ -83,7 +83,7 @@ export default function Cart({ cartItems, setCartItems }) {
 
                     <div className="col-4 col-lg-2 mt-4 mt-lg-0">
                       <p id="card_item_price">
-                        ${Number(item.product.price * item.qty).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                        ${Number(item.product.price * item.qty).toFixed(2)}
                       </p>
                     </div>
 
